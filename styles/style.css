@@ -1,1 +1,86 @@
-/* место для вашего кода */
+/* Шапка сайта */
+
+.header {
+  display: grid;
+  /* Сетка: левая колонка для меню, центральная для логотипа, правая для адреса */
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px;
+}
+
+/* Навигация и список ссылок */
+
+.header__links-list {
+  display: flex;
+  gap: 32px;
+  list-style-type: circle;
+  /* Отступ, чтобы маркеры-кружочки не вылезали за левый край */
+  padding-left: 24px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.header__link {
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.header__link_active {
+  /* Стиль для активной страницы — подчеркивание */
+  border-bottom: 1px solid currentColor;
+}
+
+/* Логотип */
+
+.header__logo {
+  display: block;
+  width: 148px;
+}
+
+.header__logo-image {
+  /* Основные стили для img в globals.css, здесь можно добавить специфичные */
+}
+
+/* Блок адреса */
+
+.address {
+  font-style: normal; /* Убираем браузерный курсив */
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.header__address {
+  /* Ограничиваем ширину, чтобы текст переносился как в макете */
+  max-width: 240px;
+  /* Прижимаем к правому краю колонки */
+  justify-self: end;
+}
+
+.header__address a {
+  text-decoration: underline;
+}
+
+/* Секции-заглушки для дальнейшей работы */
+
+.cover {
+  /* Здесь будет стилизация главной секции */
+}
+
+.description {
+  /* Класс для описания внутри cover */
+}
+
+.lots {
+  /* Здесь будет стилизация секции с карточками */
+}
+
+.about {
+  /* Здесь будет стилизация секции "Об аукционе" */
+}
+
+.footer {
+  /* Стили для подвала сайта */
+}
